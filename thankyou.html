@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Thank You - Vaibhav</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .thankyou-box {
+      border-radius: 18px;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+  </style>
+</head>
+
+<body class="contact-page">
+
+  <main class="main">
+    <section class="section">
+      <div class="container" style="min-height: 80vh;">
+        <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
+          <div class="col-lg-7 text-center">
+
+            <div class="thankyou-box">
+              <i class="bi bi-check-circle-fill" style="font-size: 60px;"></i>
+
+              <h2 class="mt-3">Thank You!</h2>
+              <p class="mt-2 mb-2">
+                Your message has been sent successfully ✅
+              </p>
+
+              <p style="opacity: 0.8;">
+                Redirecting to home page in <span id="timer">5</span> seconds...
+              </p>
+
+              <a href="index.html" class="btn btn-dark mt-3" style="border-radius: 14px;">
+                Go Home Now <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let timeLeft = 5;
+    const timerEl = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerEl.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = "index.html";
+      }
+    }, 1000);
+  </script>
+
+</body>
+
+</html>
