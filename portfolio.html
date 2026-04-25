@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Vaibhav</title>
+  <title>Projects - Vaibhav</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -42,10 +42,9 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Projects</a></li>
           <li><a href="certification.html">Certifications</a></li>
           <li class="dropdown">
   <a href="Blog.html"><span>Innovate</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -73,12 +72,12 @@
 
   <main class="main">
 
-    <!-- Portfolio Section -->
+    <!-- Projects Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h1>Portfolio</h1>
+        <h1>Projects</h1>
       </div><!-- End Section Title -->
 
       <div class="container section-title" data-aos="fade-up">
@@ -206,6 +205,302 @@
 
 </div>
 
+      <div class="container section-title ai-projects-title" data-aos="fade-up">
+        <h2 class="text-center">AI Projects</h2>
+        <p>AI systems I built and deployed using cloud infrastructure, model APIs, and production-oriented workflows.</p>
+      </div>
+
+      <div class="container">
+        <div class="separate-portfolio-grid ai-projects-grid">
+
+          <button class="showcase-card ai-showcase-card" type="button" data-bs-toggle="modal" data-bs-target="#swasthyaSathiModal">
+            <div class="showcase-content">
+              <span class="project-status">AWS Deployment</span>
+              <h3>Swasthya Sathi</h3>
+
+              <p class="showcase-desc">
+                Healthcare AI platform with lab analysis, doctor-in-the-loop chat, medication tracking,
+                appointment scheduling, and safety-first patient workflows.
+              </p>
+
+              <p class="showcase-tech">
+                <strong>Tech:</strong> JavaScript, Node.js, Express, Bedrock, DynamoDB, EC2, S3
+              </p>
+
+              <div class="ai-feature-grid">
+                <span>AI Lab Report Analyzer</span>
+                <span>Doctor-in-the-Loop AI Chat</span>
+                <span>Medication Tracker</span>
+                <span>AWS Deployment</span>
+              </div>
+
+              <span class="ai-open-link">View details</span>
+            </div>
+          </button>
+
+          <button class="showcase-card ai-showcase-card" type="button" data-bs-toggle="modal" data-bs-target="#aiChatBothModal">
+            <div class="showcase-content">
+              <span class="project-status">Google Cloud Deployment</span>
+              <h3>AI-Powered Research Assistant</h3>
+
+              <p class="showcase-desc">
+                Lightweight research assistant built with Google ADK and Gemini, enhanced with a custom
+                Wikipedia search tool and deployed as a scalable HTTP API on Cloud Run.
+              </p>
+
+              <p class="showcase-tech">
+                <strong>Tech:</strong> Google ADK, Gemini, HTTP API, Wikipedia tool, Cloud Run
+              </p>
+
+              <div class="ai-feature-grid">
+                <span>Real-time Q&amp;A</span>
+                <span>Gemini Responses</span>
+                <span>Wikipedia Search Tool</span>
+                <span>Chat-style UI</span>
+              </div>
+
+              <span class="ai-open-link">View details</span>
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+      <div class="modal fade project-modal" id="swasthyaSathiModal" tabindex="-1" aria-labelledby="swasthyaSathiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <span class="modal-eyebrow">AI Project</span>
+                <h5 class="modal-title" id="swasthyaSathiModalLabel">Swasthya Sathi</h5>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="project-summary">Swasthya Sathi is a healthcare-oriented AI platform deployed through AWS, built around safe patient assistance, structured health workflows, and human-reviewed medical communication.</p>
+
+              <div class="project-detail-grid">
+                <div>
+                  <h6>System Modules</h6>
+                  <ul>
+                    <li>AI Lab Report Analyzer with abnormal value highlighting and patient-friendly explanations.</li>
+                    <li>Doctor-in-the-loop AI chat with human approval before final medical response.</li>
+                    <li>Medication tracker with dosage, frequency, notes, and reminder notifications.</li>
+                    <li>1:1 doctor consultation scheduling with verified doctors and auto pricing logic.</li>
+                    <li>Notification system for reminders, updates, unread badges, and timestamped events.</li>
+                    <li>JWT-protected profile management with password update support.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h6>Architecture</h6>
+                  <p><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript hosted on Amazon S3.</p>
+                  <p><strong>Backend:</strong> Node.js, Express.js, JWT auth, bcryptjs, hosted on Amazon EC2.</p>
+                  <p><strong>AI Layer:</strong> Amazon Bedrock with Claude 3 Sonnet and Claude 3 Haiku.</p>
+                  <p><strong>Database:</strong> DynamoDB with users, doctors, consultations, notifications, and medications tables.</p>
+                  <p><strong>AWS:</strong> EC2, S3, DynamoDB, Bedrock, IAM, CloudWatch.</p>
+                </div>
+                <div>
+                  <h6>Safety Guardrails</h6>
+                  <ul>
+                    <li>No diagnosis generation.</li>
+                    <li>No prescription advice.</li>
+                    <li>No medication stopping recommendation.</li>
+                    <li>Mandatory medical safety disclaimer.</li>
+                  </ul>
+                </div>
+
+<iframe
+  width="100%"
+  height="500"
+  src="https://www.youtube-nocookie.com/embed/86J2xFMIi3M"
+  allowfullscreen>
+</iframe>
+              </div>
+
+              <div class="showcase-links modal-action-links">
+                <a href="https://buajhcpaic.us-east-1.awsapprunner.com/index.html?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnSS5Cs2hItnt2a0Kc0gPxAPXkdswZl1BtBlisP4nBnF9YR_mVEIdnxngNvTc_aem_9v6Uklmm2xIPWhUnWRrnLA" target="_blank">Live Project</a>
+                <a href="https://docs.google.com/document/d/1VSoqkA3NmLepWrbiZAYO8pOtnK0FRcNxL52TI8eGOH8/edit?usp=sharing" download>Download Docs</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade project-modal" id="aiChatBothModal" tabindex="-1" aria-labelledby="aiChatBothModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <span class="modal-eyebrow">AI Project</span>
+                <h5 class="modal-title" id="aiChatBothModalLabel">AI-Powered Research Assistant</h5>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="project-summary">AI-Powered Research Assistant is a lightweight HTTP API and chat-style assistant that answers user questions in real time using Google ADK, Gemini, and a custom Wikipedia search tool for better factual grounding.</p>
+
+              <div class="project-detail-grid">
+                <div>
+                  <h6>Core Capabilities</h6>
+                  <ul>
+                    <li>Answers user questions in real time through a lightweight HTTP API.</li>
+                    <li>Uses Google ADK for agent structure and orchestration.</li>
+                    <li>Integrates Gemini for intelligent response generation.</li>
+                    <li>Enhances answers with a custom Wikipedia search tool for factual accuracy.</li>
+                    <li>Accessible through a chat-style web interface.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h6>Deployment & Architecture</h6>
+                  <p><strong>API Layer:</strong> HTTP-based service for real-time question answering.</p>
+                  <p><strong>Agent Framework:</strong> Google ADK for orchestration and agent flow design.</p>
+                  <p><strong>Model:</strong> Gemini for response generation.</p>
+                  <p><strong>Retrieval Tool:</strong> Custom Wikipedia search tool for better context and factual support.</p>
+                  <p><strong>Hosting:</strong> Deployed on Cloud Run as a scalable web service.</p>
+                </div>
+              </div>
+
+              <div class="showcase-links modal-action-links">
+                <a href="https://research-agent-132770989350.asia-south1.run.app/?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnPLzuNfGDj-cNW18wyWriPn4u0EhMKzK51MzAKwszwtK3KGcCXX7eZNG-kqk_aem_LKm07ZjUjj8ClQ-uipL04Q" target="_blank">Live Project</a>
+                <a href="assets/Project Submission Deck _ Gen AI Academy APAC Edition.pdf" download>Download Docs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="text-center">Full Stack Projects</h2>
+        <p>Here are some of the Full Stack projects completed By Me</p>
+      </div>
+
+      <div class="container">
+
+        <article class="fullstack-project-card" data-aos="fade-up">
+          <div class="fullstack-project-media">
+            <img src="assets/img/masonry-portfolio/image.png" alt="ParkEase smart parking management system preview">
+          </div>
+
+          <div class="fullstack-project-content">
+            <span class="project-status">MERN Stack</span>
+            <h3>ParkEase - Smart Parking Management System</h3>
+            <p>
+              Full-stack smart parking platform with role-based authentication, parking slot booking,
+              admin and user dashboards, pricing logic, and a modern UI.
+            </p>
+
+            <div class="fullstack-project-highlights">
+              <span><i class="bi bi-shield-lock"></i> JWT Auth</span>
+              <span><i class="bi bi-car-front"></i> Slot Booking</span>
+              <span><i class="bi bi-speedometer2"></i> Dashboards</span>
+              <span><i class="bi bi-currency-rupee"></i> Pricing Logic</span>
+            </div>
+
+            <p class="showcase-tech">
+              <strong>Tech:</strong> React, Node.js, Express.js, MongoDB Atlas, Mongoose, JWT
+            </p>
+
+            <div class="showcase-links fullstack-project-actions">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#parkEaseModal">
+                View Details
+              </button>
+              <a href="https://github.com/vaibhvbhardwj/SmartPark" target="_blank" rel="noopener">Deployed Link</a>
+              <a href="https://github.com/vaibhvbhardwj/SmartPark#readme" target="_blank" rel="noopener">Docs</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="modal fade project-modal" id="parkEaseModal" tabindex="-1" aria-labelledby="parkEaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <span class="modal-eyebrow">Full Stack Project</span>
+                <h5 class="modal-title" id="parkEaseModalLabel">ParkEase - Smart Parking Management System</h5>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="project-summary">
+                ParkEase is a full-stack Smart Parking Management System built using the MERN stack.
+                It provides role-based authentication, parking slot booking, admin and user dashboards,
+                and a modern UI. This project was developed as part of an Infosys Internship Project.
+              </p>
+
+              <div class="project-detail-grid parkease-detail-grid">
+                <div>
+                  <h6>Authentication</h6>
+                  <ul>
+                    <li>Role-based authentication using JWT.</li>
+                    <li>Secure login and registration flows.</li>
+                    <li>Admin and user roles.</li>
+                    <li>Password hashing with bcrypt.</li>
+                    <li>Protected frontend and backend routes.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h6>User Features</h6>
+                  <ul>
+                    <li>User registration and login.</li>
+                    <li>User dashboard UI.</li>
+                    <li>Active parking session view.</li>
+                    <li>Parking history.</li>
+                    <li>Vehicle management backend is ready.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h6>Admin Features</h6>
+                  <ul>
+                    <li>Admin login.</li>
+                    <li>Admin dashboard UI.</li>
+                    <li>View bookings and revenue.</li>
+                    <li>Slot and user management backend is ready.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h6>Pricing Logic</h6>
+                  <p><strong>Base charge:</strong> Rs. 19</p>
+                  <p><strong>Additional charge:</strong> Rs. 50 per hour</p>
+                  <p>Final amount is calculated when a parking slot is released.</p>
+                </div>
+
+                <div>
+                  <h6>Frontend</h6>
+                  <ul>
+                    <li>React with Vite.</li>
+                    <li>React Router DOM.</li>
+                    <li>Axios.</li>
+                    <li>Custom CSS.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h6>Backend</h6>
+                  <ul>
+                    <li>Node.js and Express.js.</li>
+                    <li>MongoDB Atlas with Mongoose.</li>
+                    <li>JWT authentication.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="showcase-links modal-action-links">
+                <a href="https://github.com/vaibhvbhardwj/SmartPark" target="_blank" rel="noopener">Deployed Link</a>
+                <a href="https://github.com/vaibhvbhardwj/SmartPark#readme" target="_blank" rel="noopener">Docs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
      
 
 
@@ -223,7 +518,6 @@
             <li data-filter=".filter-app">FrontEnd</li>
             <li data-filter=".filter-product">BackEnd</li>
             <li data-filter=".filter-branding">Web- Static</li>
-            <li data-filter=".filter-fullStack">Full Stack</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -325,16 +619,6 @@
                 <p>Made Using MongoDB, Express, NodeJS</p>
                 <a href="https://media.geeksforgeeks.org/wp-content/uploads/20240129170011/Low-Level-Design-(1).png" title="Mini Authentication System" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/vaibhvbhardwj/mini-auth-system" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullStack">
-              <img src="assets/img/masonry-portfolio/image.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SmartPark: POS of Parking</h4>
-                <p>Made Using MongoDB, Express, React, NodeJS</p>
-                <a href="assets/img/masonry-portfolio/image.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://github.com/vaibhvbhardwj/SmartPark" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 

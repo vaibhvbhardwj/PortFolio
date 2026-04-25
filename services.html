@@ -29,6 +29,7 @@
 </head>
 
 <body class="services-page">
+  <div id="services-vanta-bg" aria-hidden="true"></div>
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -40,10 +41,9 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
           <li><a href="certification.html">Certifications</a></li>
           <li class="dropdown">
   <a href="Blog.html"><span>Innovate</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -272,6 +272,29 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.VANTA) {
+        VANTA.NET({
+          el: "#services-vanta-bg",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x34b7a7,
+          backgroundColor: 0xe9e8e6,
+          points: 10.00,
+          maxDistance: 22.00,
+          spacing: 18.00
+        });
+      }
+    });
+  </script>
 
 </body>
 

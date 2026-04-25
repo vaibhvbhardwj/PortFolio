@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio</title>
+  <title>Projects</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -40,10 +40,9 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
           <li><a href="certification.html">Certifications</a></li>
           <li class="dropdown">
   <a href="Blog.html"><span>Innovate</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -74,21 +73,559 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/hero-bg.png" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7 text-center text-lg-start hero-intro">
+            <span class="hero-availability">Open to Work</span>
             <h2>Vaibhav</h2>
-            <p>Software Developer</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
-            <a href="assets/resume.pdf" download="resume.pdf" class="btn-get-Resume">Download My Resume &#128133;</a>
-            <a href="Blog.html" class="btn-get-started">Blogs</a>
+            <p>Full Stack Software Developer ready to build production-ready web apps.</p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn-get-started">Hire Me</a>
+              <a href="assets/resume.pdf" download="resume.pdf" class="btn-get-Resume">Download Resume</a>
+            </div>
+            <div class="hero-highlights" aria-label="Hiring highlights">
+              <span>Java + Spring Boot</span>
+              <span>React + Tailwind</span>
+              <span>AWS Deployment</span>
+            </div>
+
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-showcase" aria-label="Current leadership and build highlights">
+              <button class="hero-project-card" type="button" data-bs-toggle="modal" data-bs-target="#ventflyModal">
+                <span class="project-status">Testing Mode</span>
+                <strong>Lead Developer at Ventfly</strong>
+                <small>Business platform built with React, Spring Boot, AWS, Docker, PostgreSQL.</small>
+              </button>
+
+              <button class="hero-project-card" type="button" data-bs-toggle="modal" data-bs-target="#knomoModal">
+                <span class="project-status">Experimental</span>
+                <strong>Lead Developer at Knomo Developers</strong>
+                <small>Marketing, web services, app development, and AI automation delivery.</small>
+              </button>
+
+              <button class="hero-project-card" type="button" data-bs-toggle="modal" data-bs-target="#discussionHubModal">
+                <span class="project-status">In Development</span>
+                <strong>Building DiscussionHub</strong>
+                <small>Blog platform with Next.js, Spring Boot REST APIs, PostgreSQL, and cloud deployment.</small>
+              </button>
+
+              <button class="hero-project-card" type="button" data-bs-toggle="modal" data-bs-target="#swasthyaIdeaModal">
+                <span class="project-status">Idea</span>
+                <strong>Swasthya Sathi</strong>
+                <small>Development is complete and market research is now underway for this healthcare AI concept.</small>
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
+
+    <div class="modal fade project-modal" id="ventflyModal" tabindex="-1" aria-labelledby="ventflyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="modal-eyebrow">Lead Developer</span>
+              <h5 class="modal-title" id="ventflyModalLabel">Ventfly.com</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="project-summary">Ventfly is currently in testing mode. I lead full-stack development across the frontend, backend, deployment, and production readiness work.</p>
+            <div class="project-progress">
+              <div class="project-progress-label"><span>Overall build progress</span><strong>82%</strong></div>
+              <div class="project-progress-track"><span style="width: 82%"></span></div>
+            </div>
+            <div class="project-detail-grid">
+              <div>
+                <h6>Frontend</h6>
+                <p>React 19, Vite, React Router, Tailwind CSS, Zustand, Recharts, Axios, Boxicons.</p>
+              </div>
+              <div>
+                <h6>Backend</h6>
+                <p>Spring Boot, Java 17, Spring Security, JWT, BCrypt, Spring Data JPA, PostgreSQL.</p>
+              </div>
+              <div>
+                <h6>Cloud & DevOps</h6>
+                <p>AWS EC2, RDS, S3, Docker, Docker Compose, Nginx, SSL with Let's Encrypt.</p>
+              </div>
+              <div>
+                <h6>Integrations</h6>
+                <p>Razorpay payments, image storage, analytics dashboard, notifications, and GitHub workflow.</p>
+              </div>
+            </div>
+            <a href="https://ventfly.com" target="_blank" rel="noopener" class="project-link">Visit Ventfly</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade project-modal" id="knomoModal" tabindex="-1" aria-labelledby="knomoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="modal-eyebrow">Lead Developer</span>
+              <h5 class="modal-title" id="knomoModalLabel">KnomoDevelopers.com</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="project-summary">Knomo Developers provides marketing, web services, app development, and AI automation services. My role combines technical delivery with client-facing business execution.</p>
+            <div class="project-detail-grid">
+              <div>
+                <h6>Technical Development</h6>
+                <ul>
+                  <li>Full-stack web development across multiple projects.</li>
+                  <li>Backend development using Spring Boot.</li>
+                  <li>Frontend development with React and Tailwind CSS.</li>
+                  <li>AWS cloud deployment and infrastructure management.</li>
+                </ul>
+              </div>
+              <div>
+                <h6>Business & Marketing</h6>
+                <ul>
+                  <li>Marketing strategy formulation and execution.</li>
+                  <li>Client interaction and requirement gathering.</li>
+                  <li>Sales pitching to potential clients.</li>
+                  <li>Website optimization and SEO enhancement.</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://knomodevelopers.com" target="_blank" rel="noopener" class="project-link">Visit Knomo Developers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade project-modal" id="discussionHubModal" tabindex="-1" aria-labelledby="discussionHubModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="modal-eyebrow">Founder Build</span>
+              <h5 class="modal-title" id="discussionHubModalLabel">DiscussionHub.online</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="project-summary">DiscussionHub is a blog website under active development, focused on publishing, discovery, and community discussion around useful ideas.</p>
+            <div class="project-progress">
+              <div class="project-progress-label"><span>Current development progress</span><strong>58%</strong></div>
+              <div class="project-progress-track"><span style="width: 58%"></span></div>
+            </div>
+            <div class="project-detail-grid">
+              <div>
+                <h6>Application Stack</h6>
+                <p>React/Next.js frontend, Spring Boot REST backend, PostgreSQL database.</p>
+              </div>
+              <div>
+                <h6>Deployment Plan</h6>
+                <p>CDN-backed cloud deployment for fast content delivery and scalable access.</p>
+              </div>
+            </div>
+            <a href="https://discussionhub.online" target="_blank" rel="noopener" class="project-link">Visit DiscussionHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade project-modal" id="swasthyaIdeaModal" tabindex="-1" aria-labelledby="swasthyaIdeaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="modal-eyebrow">Original Idea</span>
+              <h5 class="modal-title" id="swasthyaIdeaModalLabel">Swasthya Sathi</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="project-summary">Swasthya Sathi is a healthcare AI platform idea focused on safe patient guidance, structured medical workflows, and responsible doctor-in-the-loop communication.</p>
+            <div class="project-progress">
+              <div class="project-progress-label"><span>Product development</span><strong>100%</strong></div>
+              <div class="project-progress-track"><span style="width: 100%"></span></div>
+            </div>
+            <div class="project-progress">
+              <div class="project-progress-label"><span>Market research</span><strong>In Progress</strong></div>
+              <div class="project-progress-track"><span style="width: 62%"></span></div>
+            </div>
+            <div class="project-detail-grid">
+              <div>
+                <h6>Current Position</h6>
+                <p>The core system is already built. I am now validating market need, refining positioning, and understanding adoption opportunities for a healthcare-focused rollout.</p>
+              </div>
+              <div>
+                <h6>Product Scope</h6>
+                <p>The platform includes lab report analysis, AI-assisted patient chat with doctor review, medication tracking, consultation booking, notifications, and secure profile management.</p>
+              </div>
+            </div>
+            <div class="hero-idea-video">
+              <iframe src="https://www.youtube-nocookie.com/embed/86J2xFMIi3M" title="Swasthya Sathi demo video" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <a href="Blog.html#ideas" class="project-link">See Idea Notes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>🎓 Student | ☕ Java Enthusiast | MERN | 🌐 Web Development Lover Building cool stuff with Java, Spring Boot, React.js, AWS Always learning. LETS CONNECT !!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Full Stack Software Developer.</h2>
+            <p class="fst-italic py-3">
+              I am a Full Stack Software Developer with a strong foundation in modern web technologies.
+              My expertise lies in creating scalable and efficient applications using the Spring framework for server-side
+              logic and APIs. On the frontend, I build responsive and interactive user experiences with React.
+              I am skilled in database management, working with both PostgreSQL and MySQL to ensure data integrity and performance.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 August 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>GGSIPU</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8368801490</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New Delhi, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technology</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vaibhvbhrdwj@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+             As a developer, my passion lies in bringing beautiful and innovative ideas to life.
+             I am currently looking for opportunities to contribute to open-source projects and work on personal projects.
+             I'm also actively exploring the exciting world of Generative AI because I'm fascinated by its potential to
+             push the boundaries of creativity and automation, allowing us to build truly next-generation applications.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>A practical view of the technologies, tools, and working strengths I use to build complete products.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="skills-showcase">
+          <div class="skill-card skill-card-featured">
+            <div class="skill-card-icon"><i class="bi bi-layers"></i></div>
+            <div>
+              <span class="skill-card-label">Core Stack</span>
+              <h3>Full Stack Web Development</h3>
+              <p>Building responsive interfaces, API-driven backends, auth flows, dashboards, and database-backed product features.</p>
+              <div class="skill-chip-list">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>Spring Boot</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-window-sidebar"></i></div>
+            <span class="skill-card-label">Frontend</span>
+            <h3>Interface Engineering</h3>
+            <div class="skill-chip-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React.js</span>
+              <span>Responsive UI</span>
+              <span>Graphic Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-hdd-network"></i></div>
+            <span class="skill-card-label">Backend</span>
+            <h3>APIs & Server Logic</h3>
+            <div class="skill-chip-list">
+              <span>Java</span>
+              <span>Python</span>
+              <span>C / C++</span>
+              <span>Spring Boot</span>
+              <span>Jakarta EE</span>
+              <span>Lombok</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-database"></i></div>
+            <span class="skill-card-label">Data</span>
+            <h3>Database & Storage</h3>
+            <div class="skill-chip-list">
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB Atlas</span>
+              <span>Mongoose</span>
+              <span>Schema Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-cloud-check"></i></div>
+            <span class="skill-card-label">Cloud & DevOps</span>
+            <h3>Deployment Workflow</h3>
+            <div class="skill-chip-list">
+              <span>AWS</span>
+              <span>Google Cloud</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>CI/CD</span>
+              <span>Git & GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-cpu"></i></div>
+            <span class="skill-card-label">AI</span>
+            <h3>Generative AI Tools</h3>
+            <div class="skill-chip-list">
+              <span>GenAI</span>
+              <span>Prompt Engineering</span>
+              <span>Agentic AI</span>
+              <span>LangChain</span>
+              <span>n8n</span>
+              <span>Google ADK</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <span class="skill-card-label">Growth</span>
+            <h3>Product & Market Thinking</h3>
+            <div class="skill-chip-list">
+              <span>Google Search Console</span>
+              <span>Market Analysis</span>
+              <span>Competitive Analysis</span>
+              <span>Customer Retention</span>
+              <span>Market Acquisition</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="bi bi-people"></i></div>
+            <span class="skill-card-label">Collaboration</span>
+            <h3>Working Strengths</h3>
+            <div class="skill-chip-list">
+              <span>Problem Solving</span>
+              <span>Active Listening</span>
+              <span>Team Collaboration</span>
+              <span>Adaptability</span>
+              <span>Time Management</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>At a Glance</h2>
+        <p>A quick reference of my Knowledge using academic and professional achievements</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end=" 7.890" data-purecounter-duration="1" class="purecounter"></span>
+              <p>CGPA</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="purecounter"></span>
+              <p>GitHub Repositories</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Key Skills</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Soft Skills</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Meet Few People i have worked with...</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3><a href="https://www.linkedin.com/in/shivamverma45/" target="_blank">Shivam Verma</a></h3>
+                <h4>Senior Software Developer & Director</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As a full stack developer, he consistently delivers high-quality code and takes ownership
+                    of his projects from start to finish. His expertise in the Spring-React ecosystem was a key factor
+                    in our project's success, and his commitment to the team is a valuable asset.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3><a href="https://www.linkedin.com/in/chhavi-bhardwaj-94265326a/" target="_blank">Chhavi Bhardwaj </a></h3>
+                <h4>Business Analyst</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>He has a remarkable ability to understand complex business requirements and translate them into a clear,
+                    effective technical vision. His proactive communication made the entire development process smooth and ensured
+                    the final product perfectly matched our needs</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3><a href="https://www.linkedin.com/in/nancy-rana6/" target="_blank">Nancy Rana</a></h3>
+                <h4>S-DET</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>His code is a pleasure to work with from a testing perspective. He writes clean, modular, and
+                    well-tested components, which significantly streamlined our QA process. His dedication to quality
+                    is evident in every line of code he writes.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3><a href="https://www.linkedin.com/in/manav-sharma-887a0926b/" target="_blank"> Manav Sharma</a></h3>
+                <h4>Student, Data Analysis Track</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Working on our project with him was a great experience. He was an excellent collaborator,
+                     always willing to help and explain backend concepts. His strong technical skills were instrumental,
+                     and his guidance was invaluable to the entire team.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3><a href="https://www.linkedin.com/in/piyush-saxena-160036347/" target="_blank"> Piyush Saxena</a></h3>
+                <h4>Student, Software Engineer Track</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Working alongside him has been incredibly inspiring. He's always patient and clear when explaining
+                    complex concepts, especially when I was just starting out with Java. His guidance has been invaluable,
+                    and I've learned so much about clean code and project structure from his examples.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
 
   </main>
 
@@ -125,9 +662,31 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      if (window.VANTA && document.querySelector('#hero')) {
+        VANTA.TRUNK({
+          el: '#hero',
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x34b7a7,
+          backgroundColor: 0xe9e8e6,
+          spacing: 10.00,
+          chaos: 6.00
+        });
+      }
+    });
+  </script>
 
 </body>
 
