@@ -1460,6 +1460,10 @@ section,
   z-index: 1;
 }
 
+.services-page #header {
+  z-index: 10000;
+}
+
 .services-page .main {
   background: transparent;
 }
