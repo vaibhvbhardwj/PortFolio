@@ -261,6 +261,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Projects</a></li>
           <li><a href="certification.html">Certifications</a></li>
+          <li><a href="Code.html">Code Philosophy</a></li>
           <li class="dropdown">
             <a href="Blog.html" class="active">
               <span>Innovate</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
@@ -296,7 +297,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="blog-card">
               <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
                 <h4 class="mb-0">Swasthya Sathi</h4>
@@ -315,7 +316,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="blog-card">
               <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
                 <h4 class="mb-0">AI-Powered Research Assistant</h4>
@@ -329,6 +330,25 @@
                 <span class="idea-badge"><i class="bi bi-hash"></i> Cloud Run</span>
               </div>
               <button class="btn btn-sm btn-outline-dark blog-btn" data-bs-toggle="modal" data-bs-target="#researchAssistantBlogModal">
+                Read More <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="blog-card">
+              <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                <h4 class="mb-0">Life OS at Home</h4>
+                <span class="date">26 Apr 2026</span>
+              </div>
+              <p class="mb-2" style="font-weight: 600; opacity: 0.85;">Building a calm, local-first personal operating system</p>
+              <p class="mb-3">A personal operating-system concept for bringing household routines, useful information, quick mobile capture, and private Linux automation into one calm interface.</p>
+              <div class="mb-3">
+                <span class="idea-badge"><i class="bi bi-hash"></i> Home Tech</span>
+                <span class="idea-badge"><i class="bi bi-hash"></i> Local-First</span>
+                <span class="idea-badge"><i class="bi bi-hash"></i> React Native</span>
+              </div>
+              <button class="btn btn-sm btn-outline-dark blog-btn" data-bs-toggle="modal" data-bs-target="#lifeOSBlogModal">
                 Read More <i class="bi bi-arrow-right"></i>
               </button>
             </div>
@@ -493,6 +513,65 @@
     </div>
   </div>
 
+  <div class="modal fade" id="lifeOSBlogModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 18px;">
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title">Life OS at Home</h5>
+            <p class="mb-0" style="opacity: 0.8; font-size: 14px;">Idea lab &amp; product direction for personal household technology</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <span class="idea-badge"><i class="bi bi-calendar"></i> 26 Apr 2026</span>
+            <div>
+              <span class="idea-badge"><i class="bi bi-hash"></i> Home Technology</span>
+              <span class="idea-badge"><i class="bi bi-hash"></i> Local-First</span>
+              <span class="idea-badge"><i class="bi bi-hash"></i> Private Automation</span>
+            </div>
+          </div>
+
+          <p>Life OS at Home is a personal operating-system concept designed to bring household routines, useful information, active projects, and private automation into one unified, calm interface.</p>
+          <p>Unlike fragmented cloud utilities or intrusive smart-home setups, Life OS centers around local-first data ownership, speed, and privacy—providing a single source of truth for home management away from noisy third-party dashboards.</p>
+
+          <div class="research-snapshot">
+            <div class="research-column">
+              <span class="research-number">01</span>
+              <h6>Home Command Center</h6>
+              <p>One view for schedules, household notes, tasks, documents, and essential information that keeps daily life running smoothly.</p>
+            </div>
+            <div class="research-column">
+              <span class="research-number research-number-green">02</span>
+              <h6>Mobile Companion</h6>
+              <p>A React Native mobile companion built for quick note capture, task reminders, approvals, and useful updates away from the main dashboard.</p>
+            </div>
+            <div class="research-column">
+              <span class="research-number research-number-orange">03</span>
+              <h6>Private Automation</h6>
+              <p>Local-first background workflows running on a private Linux home server, engineered for complete ownership, security, and reliability.</p>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <h6>Core Value &amp; Product Direction</h6>
+          <ul>
+            <li><strong>Single Source of Truth:</strong> Unifies scattered household notes, documents, and tasks into a clean central hub.</li>
+            <li><strong>Local-First Privacy:</strong> Keeps personal data on home hardware without relying on cloud locks.</li>
+            <li><strong>Seamless Capture:</strong> Mobile application allows friction-free logging and remote monitoring on the go.</li>
+            <li><strong>Automated Routines:</strong> Background triggers manage repetitive home server tasks silently.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="portfolio.html#life-os-projects" class="btn btn-dark">Explore Direction</a>
+          <a href="index.html#life-os" class="btn btn-outline-dark">View Homepage Concept</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="ideaModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content" style="border-radius: 18px;">
@@ -533,6 +612,25 @@
 
   <script>
     const ideas = [
+      {
+        title: "Life OS at Home",
+        tagline: "Personal operating-system concept for household routines & private automation",
+        desc: "A personal operating-system concept for bringing household routines, useful information, projects, and private automation into one calm interface. Designed around ownership, privacy, and dependable everyday use.",
+        badges: ["Home Tech", "Local-First", "React Native", "Linux Server"],
+        features: [
+          "Home Command Center: Central view for schedules, household notes, tasks, & documents",
+          "Mobile Companion: React Native companion for quick capture, reminders, & updates",
+          "Private Automation: Local-first workflows on a Linux home server for total data ownership",
+          "Household Knowledge: Unified repository for home maintenance, projects, & routines"
+        ],
+        plan: [
+          { stage: "Stage 1: Architecture & Local Schemas", status: "active", desc: "Design local-first data models, command center dashboard layouts, and mobile sync specs." },
+          { stage: "Stage 2: Home Dashboard MVP", status: "planned", desc: "Build central web dashboard for schedules, documents, and local server REST endpoints." },
+          { stage: "Stage 3: React Native Mobile Companion", status: "planned", desc: "Develop iOS/Android companion app for quick task capture and push notifications." },
+          { stage: "Stage 4: Private Automation Engine", status: "planned", desc: "Deploy background tasks and local IoT/automation scripts on Linux home server." },
+          { stage: "Stage 5: Daily Driver Rollout", status: "planned", desc: "Optimize local storage performance, refine UX, and integrate into daily routine." }
+        ]
+      },
       {
         title: "SOLOVACAY",
         tagline: "Vacation planner for solo travelers",
