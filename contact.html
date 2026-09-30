@@ -162,7 +162,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" class="btn text-white px-4 py-3 rounded-3 fw-bold" style="background: #25D366; border: none; font-size: 16px;"><i class="bi bi-whatsapp me-2 fs-5"></i> Send Message via WhatsApp DM</button>
                 </div>
 
               </div>
@@ -214,11 +214,33 @@
   <script src="assets/js/main.js"></script>
   <script>
     const contactForm = document.querySelector('form[name="contact"]');
-    const nextUrlField = document.getElementById("form-next-url");
 
-    if (contactForm && nextUrlField) {
-      contactForm.addEventListener("submit", function () {
-        nextUrlField.value = new URL("thankyou.html", window.location.href).href;
+    if (contactForm) {
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        
+        const name = document.getElementById("name-field").value.trim();
+        const email = document.getElementById("email-field").value.trim();
+        const subject = document.getElementById("subject-field").value.trim();
+        const message = document.getElementById("message-field").value.trim();
+
+        if (!name || !email || !subject || !message) {
+          alert("Please fill in all fields before sending.");
+          return;
+        }
+
+        const formattedText = `Hello Vaibhav,\n\n📌 *Name:* ${name}\n✉️ *Email:* ${email}\n🏷️ *Subject:* ${subject}\n\n💬 *Message:*\n${message}`;
+        
+        const whatsappUrl = `https://wa.me/918368801490?text=${encodeURIComponent(formattedText)}`;
+        
+        const sentMsg = document.querySelector('.sent-message');
+        if (sentMsg) {
+          sentMsg.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i> Opening WhatsApp to send your formatted message! Thank you for getting in touch.';
+          sentMsg.style.display = 'block';
+          sentMsg.style.color = '#15803d';
+        }
+
+        window.open(whatsappUrl, '_blank');
       });
     }
   </script>

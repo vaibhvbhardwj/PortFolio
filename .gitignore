@@ -1,0 +1,5 @@
+*.apk
+app-release.apk
+new_resume.pdf
+node_modules/
+.DS_Store
