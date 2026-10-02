@@ -46,7 +46,7 @@
       --text-body: #334155;
       --text-muted: #64748b;
       --border-color: #e2e8f0;
-      
+
       /* Dark Card Contrast Overrides for High-Contrast Labs */
       --dark-card-bg: #1e293b;
       --dark-card-text: #f8fafc;
@@ -68,7 +68,7 @@
     }
 
     .book-background {
-      background-image: 
+      background-image:
         radial-gradient(var(--portfolio-teal-light) 1.2px, transparent 1.2px),
         linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
       background-size: 24px 24px, 100% 100%;
@@ -475,17 +475,17 @@
           <span class="chapter-badge">
             <i class="bx bx-book-bookmark"></i> Interactive Technical Field Guide
           </span>
-          
+
           <h1 class="display-4 fw-bold mb-2" style="letter-spacing: -1px;">
             The Field Guide to Computation &amp; Thought
           </h1>
-          
+
           <h2 class="h4 text-secondary mb-4" style="font-weight: 500;">
             How Humans Taught Sand to Think
           </h2>
-          
+
           <p class="lead text-muted mx-auto mb-4" style="max-width: 820px; font-size: 18px;">
-            An interactive exploration combining computer science history, hardware execution models, 
+            An interactive exploration combining computer science history, hardware execution models,
             algorithmic mindset, browser rendering engines, and the LifeOS engineering artifact.
           </p>
 
@@ -553,15 +553,15 @@
 
               <div class="bit-summary-box d-flex justify-content-between align-items-center flex-wrap gap-3">
                 <div>
-                  <span class="dark-card-label">Binary Byte:</span> 
+                  <span class="dark-card-label">Binary Byte:</span>
                   <strong id="binaryDisplay" class="text-teal ms-1">01001011</strong>
                 </div>
                 <div>
-                  <span class="dark-card-label">Base-10 Decimal:</span> 
+                  <span class="dark-card-label">Base-10 Decimal:</span>
                   <strong id="decimalDisplay" class="text-dark ms-1">75</strong>
                 </div>
                 <div>
-                  <span class="dark-card-label">ASCII Character:</span> 
+                  <span class="dark-card-label">ASCII Character:</span>
                   <strong id="asciiDisplay" class="text-success ms-1" style="font-size: 20px;">'K'</strong>
                 </div>
               </div>
@@ -846,7 +846,7 @@
             </div>
 
             <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-              <a href="https://github.com/vaibhvbhardwaj/PortFolio/releases" target="_blank" class="btn-lifeos-download">
+              <a href="https://drive.google.com/drive/folders/1qRGM3Jmi_zH9Ik0ZaNpqqp0O65-F-buE?usp=sharing" target="_blank" class="btn-lifeos-download">
                 <i class="bx bx-download fs-4"></i>
                 <span>Download LifeOS APK (GitHub Release)</span>
               </a>
@@ -1095,7 +1095,7 @@
 
       document.getElementById('binaryDisplay').innerText = binaryStr;
       document.getElementById('decimalDisplay').innerText = decimalVal;
-      
+
       const asciiDisplay = document.getElementById('asciiDisplay');
       if (decimalVal >= 32 && decimalVal <= 126) {
         asciiDisplay.innerText = `'${String.fromCharCode(decimalVal)}'`;
@@ -1122,7 +1122,7 @@
     function showMemoryStage(idx) {
       const cards = document.querySelectorAll('#memoryStageBar .pipeline-step-card');
       cards.forEach((c, i) => c.classList.toggle('active', i === idx));
-      
+
       document.getElementById('memoryStageTitle').innerText = memoryStages[idx].title;
       document.getElementById('memoryStageDesc').innerText = memoryStages[idx].desc;
     }
@@ -1139,7 +1139,7 @@
       consoleBox.style.border = '1px solid #fecaca';
       consoleBox.style.color = '#dc2626';
       consoleBox.innerHTML = '[FAIL] Test #1: makeCoffee("Hot Water") ➔ ReferenceError: milk is not defined at line 2:18';
-      
+
       const status = document.getElementById('debugStatus');
       status.innerText = '✗ 1/2 Tests Failing';
       status.className = 'badge bg-danger';
@@ -1154,7 +1154,7 @@
       consoleBox.style.border = '1px solid #bbf7d0';
       consoleBox.style.color = '#15803d';
       consoleBox.innerHTML = '✓ [PASS] Test #1: makeCoffee("Hot Water") ➔ "Hot Water + Milk"<br>✓ [PASS] Test #2: makeCoffee("Cold Brew") ➔ "Cold Brew + Milk"<br><span class="fw-bold text-dark">Result: All 2 unit tests passed cleanly.</span>';
-      
+
       const status = document.getElementById('debugStatus');
       status.innerText = '✓ 2/2 Tests Passing';
       status.className = 'badge bg-success';
